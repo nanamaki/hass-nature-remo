@@ -3,11 +3,8 @@ import logging
 from enum import Enum
 
 import voluptuous as vol
-from homeassistant.components.light import (
-    LightEntity,
-    SUPPORT_BRIGHTNESS,
-    SUPPORT_COLOR_TEMP,
-)
+from homeassistant.components.light import LightEntity
+from homeassistant.components.light.const import ColorMode
 from homeassistant.helpers import config_validation as cv, entity_platform
 from . import DOMAIN, NatureRemoBase
 
